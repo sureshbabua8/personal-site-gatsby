@@ -4,9 +4,11 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
+import me from '../assets/images/me.jpeg';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
+import pic4 from '../assets/images/pic04.jpg';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -33,6 +35,9 @@ const IndexPage = () => (
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
+      <div className="image">
+          <img src={me} alt="" />
+        </div>
         <header className="major">
           <h2>
             Hi! My name's Amirtha.
@@ -43,8 +48,9 @@ const IndexPage = () => (
           I'm passionate about serving the community, learning new skills, and working on various open source projects.  
             <br />
             <br />
-          I'm experienced in backend and Android development, and currently honing in on my front-end development skills!  
-          I love algorithms and all forms of theoretical computer science; I hope to continue expanding my expertise in these fields and find new ways to apply them into my work.
+          I'm experienced in backend and Android development, and currently honing in on my front-end skills!  
+          I love algorithms and all forms of theoretical computer science; 
+          I hope to continue expanding my expertise in these fields and finding new ways to apply my knowledge into my work.
             
           </p>
         </header>
@@ -75,14 +81,14 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
+            Technical Skills
+            {/* <br /> */}
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+          <ul className="alt">
+								<li>Backend development</li>
+								<li>Android mobile development</li>
+								<li>Web development</li>
+							</ul>
         </div>
       </section>
       <section className="spotlight">
@@ -91,14 +97,18 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            Capital One
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+          <header>
+						<h4>Software Engineering Intern</h4>
+						<p>Jun 2020 - Aug 2020</p>
+            {/* <br/> */}
+            <ul>
+								<li>Deploy client-agnostic REST API to automate total loss process</li>
+								<li>Develop AWS Textract proof-of-concept as model for OCR pipeline</li>
+								<li>Improve efficiency of total loss title release by 50 percent, cost by 74%</li>
+							</ul>
+					</header>
         </div>
       </section>
       <section className="spotlight">
@@ -107,14 +117,37 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
+            Department of Computer Science
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+          <header>
+						<h4>Head Course Assistant (Paid)</h4>
+						<p>Jan 2020 - Present</p>
+            {/* <br/> */}
+            <ul>
+								<li>Developing full-stack Android machine project for Fall 2020 students</li>
+								<li>Testing app development with JUnit, ShadowMocker, and Roboelectric</li>
+								<li>Currently writing documentation to guide semester-long progress</li>
+							</ul>
+					</header>
+        </div>
+      </section>
+      <section className="spotlight">
+        <div className="image">
+          <img src={pic4} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            Summer Intern
+          </h2>
+          <header>
+						<h4>Walmart</h4>
+						<p>Jun 2019 - Aug 2019</p>
+            {/* <br/> */}
+            <ul>
+								<li>Analyzed and summarized gaps within ESG metrics reporting</li>
+								<li>Created flow process models using PM and product management ideologies</li>
+							</ul>
+					</header>
         </div>
       </section>
     </section>
@@ -122,7 +155,7 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Projects and Involvement</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
             eleifend
