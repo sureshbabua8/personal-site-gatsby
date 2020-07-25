@@ -73,8 +73,20 @@ const IndexPage = () => (
         </ul> */}
       </div>
     </section>
-
+    <section id="two" className="wrapper style4 special">
+    <header className="inner">
+          <h2>Work Experience</h2>
+          {/* <p>
+            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
+            eleifend
+            <br />
+            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
+            ullamcorper.
+          </p> */}
+        </header>
+    </section>
     <section id="two" className="wrapper alt style2">
+    
       <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="" />
@@ -151,35 +163,35 @@ const IndexPage = () => (
         </div>
       </section>
     </section>
-
-    <section id="three" className="wrapper style3 special">
-      <div className="inner">
-        <header className="major">
+    <section id="two" className="wrapper style4 special">
+    <header className="inner">
           <h2>Projects and Involvement</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
         </header>
+    </section>
+    <section id="three" className="wrapper style3 special">
+    <header className="inner">
+          <h2>Projects</h2>
+        </header>
+      <div className="inner">
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+          <li>
+          <header>
+            <h3>CS@Illinois Community</h3>
+            <p>Jun 2020 - Present</p>
+          </header>
+          <p>Static website powered by Gatsby and ReactJS, querying data using GraphQL</p>
+          </li>
+          <li>
+          <header>
+            <h3>Course Explorer</h3>
+            <p>Jun 2020 - Present</p>
+          </header>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Android app that allows students to search and rate courses,
+            built and Dockerized REST API to access coursess
             </p>
           </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
+          <li>
             <h3>Mus Scelerisque</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
