@@ -35,19 +35,20 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
+            Hi! My name's Amirtha.
+          <br/>
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+          I'm a rising junior at the University of Illinois Urbana Champaign, studying math, computer science, and statistics.  
+          I'm passionate about serving the community, learning new skills, and working on various open source projects.  
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            <br />
+          I'm experienced in backend and Android development, and currently honing in on my front-end development skills!  
+          I love algorithms and all forms of theoretical computer science; I hope to continue expanding my expertise in these fields and find new ways to apply them into my work.
+            
           </p>
         </header>
-        <ul className="icons major">
+        {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
@@ -63,7 +64,7 @@ const IndexPage = () => (
               <span className="label">Dolor</span>
             </span>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
 
