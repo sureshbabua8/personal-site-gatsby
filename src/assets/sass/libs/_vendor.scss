@@ -196,6 +196,12 @@
 	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
 	/// @var {list}
 	$vendor-values: (
+		// box
+			'box',
+
+		// block
+			'block',
+			'inline-block',
 
 		// Cross fade.
 			'cross-fade',

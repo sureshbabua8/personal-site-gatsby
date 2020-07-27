@@ -1058,29 +1058,37 @@
 
 	.spotlight {
 		@include vendor('align-items', 'center');
+		@include vendor('align-self', 'center');
+		@include vendor('justify-content', 'center');
 		@include vendor('display', 'flex');
+		// @include vendor ('width', 'fill');
+
+		// @include vendor('box-sizing', 'box-content');
+		// align-content: center;
 
 		.image {
-			@include vendor('order', '1');
-			border-radius: 0;
-			width: 40%;
+			@include vendor('order', '2');
+			border-radius: 5px;
+			width: 50%;
 
 			img {
-				border-radius: 0;
-				width: 100%;
+				border-radius: 5px;
+				width: 50%;
 			}
 		}
 
 		.content {
 			@include padding(2em, 4em);
-			@include vendor('order', '2');
+			@include vendor('order', '1');
+			text-align: left;
+			
 			max-width: 48em;
-			width: 60%;
+			width: 70%;
 		}
 
-		&:nth-child(2n) {
-			@include vendor('flex-direction', 'row-reverse');
-		}
+		// &:nth-child(2n) {
+		// 	@include vendor('flex-direction', 'row-reverse');
+		// }
 
 		@for $i from 1 through _misc(max-spotlights) {
 			$j: 0.075 * $i;
@@ -1322,7 +1330,7 @@
 		@include padding(6em, 0);
 
 		> .inner {
-			width: 60em;
+			width: 50em;
 			margin: 0 auto;
 
 			@include breakpoint('<=large') {

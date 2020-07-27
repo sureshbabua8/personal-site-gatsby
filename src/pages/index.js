@@ -8,7 +8,7 @@ import me from '../assets/images/me.jpeg';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
+import pic4 from '../assets/images/pic04.png';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -35,14 +35,15 @@ const IndexPage = () => (
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
-      <div className="image">
-          <img src={me} alt="" />
-        </div>
-        <header className="major">
-          <h2>
-            Hi! My name's Amirtha.
-          <br/>
-          </h2>
+        <div className="image">
+            <img src={me} alt="" />
+          </div>
+          <header className="major">
+            <h2>
+              Hi! My name's Amirtha.
+            <br/>
+            </h2>
+          </header>
           <p>
           I'm a rising junior at the University of Illinois Urbana Champaign, studying math, computer science, and statistics.  
           I'm passionate about serving the community, learning new skills, and working on various open source projects.  
@@ -53,60 +54,40 @@ const IndexPage = () => (
           I hope to continue expanding my expertise in these fields and finding new ways to apply my knowledge into my work.
             
           </p>
-        </header>
-        {/* <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul> */}
       </div>
     </section>
     <section id="two" className="wrapper style4 special">
     <header className="inner">
-          <h2>Work Experience</h2>
-          {/* <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p> */}
+          <h2>Work Experience & Skills</h2>
         </header>
     </section>
     <section id="two" className="wrapper alt style2">
-    
+    <div className="inner">
+        <br/>
+        <ul className="features">
+          <li>
+          <header>
+            <h3>Backend Development</h3>
+          </header>
+          </li>
+          <li>
+          <header>
+            <h3>Android Mobile Development</h3>
+          </header>
+          </li>
+          <li>
+          <header>
+            <h3>Web Development</h3>
+          </header>
+          </li>
+        </ul>
+      </div>
       <section className="spotlight">
-        <div className="image">
-          <img src={pic1} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Technical Skills
-            {/* <br /> */}
-          </h2>
-          <ul className="alt">
-								<li>Backend development</li>
-								<li>Android mobile development</li>
-								<li>Web development</li>
-							</ul>
-        </div>
       </section>
       <section className="spotlight">
-        <div className="image">
-          <img src={pic2} alt="" />
-        </div>
+      {/* <div className="image">
+          <img src={pic4} alt="" />
+        </div> */}
         <div className="content">
           <h2>
             Capital One
@@ -124,9 +105,6 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
         <div className="content">
           <h2>
             Department of Computer Science
@@ -144,9 +122,9 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
+        {/* <div className="image">
           <img src={pic4} alt="" />
-        </div>
+        </div> */}
         <div className="content">
           <h2>
             Summer Intern
@@ -188,35 +166,67 @@ const IndexPage = () => (
           </header>
             <p>
             Android app that allows students to search and rate courses,
+            built and Dockerized REST API to access courses
+            </p>
+          </li>
+          <li>
+          <header>
+            <h3>Gentle Kotlin</h3>
+            <p>Dec 2019 - Present</p>
+          </header>
+            <p>
+            Kotlin tutorial website powered by Jekyll, writing blog posts on Kotlin paradigms and syntax
+            </p>
+          </li>
+          <li>
+          <header>
+            <h3>Aural Training</h3>
+            <p>May 2019 - Present</p>
+          </header>
+            <p>
+            desktop and Android (in development) application with training algorithm that tests chord and interval identification
+            </p>
+          </li>
+        </ul>
+      </div>
+      <header className="inner">
+          <h2>Involvement</h2>
+        </header>
+      <div className="inner">
+        <ul className="features">
+          <li>
+          <header>
+            <h3>Rewriting the Code Fellow</h3>
+            <p>2020-2021</p>
+          </header>
+          <p>WIE networking program with undergraduate and masters level students, currently a mentor in the high school bridge program</p>
+          </li>
+          <li>
+          <header>
+            <h3>Course Explorer</h3>
+            <p>Jun 2020 - Present</p>
+          </header>
+            <p>
+            Android app that allows students to search and rate courses,
             built and Dockerized REST API to access coursess
             </p>
           </li>
           <li>
-            <h3>Mus Scelerisque</h3>
+          <header>
+            <h3>Gentle Kotlin</h3>
+            <p>Dec 2019 - Present</p>
+          </header>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Kotlin tutorial website powered by Jekyll, writing blog posts on Kotlin paradigms and syntax
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li>
+          <header>
+            <h3>Aural Training</h3>
+            <p>May 2019 - Present</p>
+          </header>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Desktop and Android (in development) application with training algorithm that tests chord and interval identification
             </p>
           </li>
         </ul>
@@ -226,7 +236,7 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Interested in working with me?</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
             eleifend fringilla.
